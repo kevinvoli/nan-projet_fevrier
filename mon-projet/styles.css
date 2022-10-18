@@ -1,0 +1,134 @@
+*,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(4, 78, 1, 0.863);
+    height: 70px;
+    font-weight:bold;
+}
+
+.logo{
+    border-color: aqua;
+    padding: 5px;
+}
+.logo a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-link{
+    border-color: aqua;
+    height: 100%;
+    margin-right: 42px;
+    cursor: pointer;
+    width: 35px;
+    height: 50%;
+
+}
+
+.nav-link ul{
+    position: absolute;
+    right: 0;
+    top: 25%;
+    list-style-type: none;
+    display: block;
+}
+
+.nav-link ul li{
+    display: block;
+    float: left;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.nav-link ul li:hover{
+    background-color: aqua;
+}
+
+.nav-link ul li a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+.nav-link .toggle-content{
+    display: none;
+    cursor: pointer;
+    background-color: blueviolet;
+    width: 35px;
+    margin-right: 20px;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+}
+
+.nav-link .Toggle{
+    border: 1.7px solid white;
+    width: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+.nav-link .Toggle::after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    border: 1.7px solid white;
+    width: 30px;
+    cursor: pointer;
+}
+.nav-link .Toggle::before{
+    content: "";
+    position: absolute;
+    top: -10px;
+    border: 1.7px solid white;
+    width: 30px;
+    cursor: pointer;
+}
+
+
+/* media screen */
+
+@media (width <= 770px){
+    /* screen */
+.nav-link ul{
+    position: absolute;
+    list-style-type: none;
+    display: block;
+    background-color: aqua;
+    width: 100%;
+    background-color: rgba(4, 78, 1, 0.863);
+    left: 0;
+    top: 68px;
+
+}
+.nav-link ul li{
+    display: block;
+    text-align: left;
+    float: none;
+    margin: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+.nav-link .toggle-content{
+    display: block;
+}
+
+
+
+/* fin */
+
+
+}
